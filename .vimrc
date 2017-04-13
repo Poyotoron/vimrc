@@ -12,12 +12,12 @@ set cursorcolumn
 set smartindent
 set showmatch
 set wildmode=list:longest
-set syntax on
+syntax on
 set title
 
 " Tab
-set list listchars=tab:>-
-set expandtab
+set list
+set list listchars=tab:>-,trail:-,
 set tabstop=4
 set shiftwidth=4
 
