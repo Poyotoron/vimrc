@@ -4,6 +4,8 @@ set nobackup
 set noswapfile
 set autoread
 set hidden
+set backspace=indent,eol,start
+set nocompatible
 
 " view
 set number
@@ -14,10 +16,12 @@ set showmatch
 set wildmode=list:longest
 syntax on
 set title
+set ruler
+set nowrap
 
 " Tab
 set list
-set list listchars=tab:>-,trail:-,
+set list listchars=tab:>-
 set tabstop=4
 set shiftwidth=4
 
