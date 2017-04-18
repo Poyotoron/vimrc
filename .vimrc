@@ -8,6 +8,8 @@ set backspace=indent,eol,start
 set nocompatible
 
 " view
+colorscheme molokai
+set t_Co=256
 set number
 set cursorline
 set cursorcolumn
