@@ -35,3 +35,7 @@ set wrapscan
 
 " mouse
 set mouse=a
+
+for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
+	exec "imap " . k . " " . k . "<C-N><C-P>"
+endfor
