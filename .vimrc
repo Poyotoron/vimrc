@@ -23,7 +23,6 @@ set nowrap
 
 " Tab
 set list
-set list listchars=tab:>-
 set tabstop=4
 set shiftwidth=4
 
