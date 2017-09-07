@@ -6,6 +6,7 @@ set autoread
 set hidden
 set backspace=indent,eol,start
 set nocompatible
+set listchars=tab:\ \ ,eol:$
 
 " view
 colorscheme molokai
