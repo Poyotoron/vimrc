@@ -8,6 +8,7 @@ set backspace=indent,eol,start
 set nocompatible
 set showcmd
 set clipboard=unnamed
+
 " view
 colorscheme molokai
 set t_Co=256
@@ -28,7 +29,6 @@ imap ( ()<left>
 imap { {}<left>
 
 " Tab
-set list
 set tabstop=4
 set shiftwidth=4
 
