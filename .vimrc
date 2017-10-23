@@ -6,8 +6,8 @@ set autoread
 set hidden
 set backspace=indent,eol,start
 set nocompatible
-set listchars=tab:\ \ ,eol:$
-
+set showcmd
+set clipboard=unnamed
 " view
 colorscheme molokai
 set t_Co=256
@@ -21,6 +21,11 @@ syntax on
 set title
 set ruler
 set nowrap
+
+" input
+imap [ []<left>
+imap ( ()<left>
+imap { {}<left>
 
 " Tab
 set list
