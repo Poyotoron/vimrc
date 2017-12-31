@@ -15,6 +15,8 @@ set t_Co=256
 set number
 set cursorline
 set cursorcolumn
+set autoindent
+set expandtab
 set smartindent
 set showmatch
 set wildmode=list:longest
@@ -33,10 +35,11 @@ set tabstop=4
 set shiftwidth=4
 
 " find
+set hlsearch
 set ignorecase
 set smartcase
 set incsearch
-set wrapscan
+set nowrapscan
 
 " mouse
 set mouse=a
