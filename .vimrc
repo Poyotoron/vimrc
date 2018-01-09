@@ -40,6 +40,7 @@ set ignorecase
 set smartcase
 set incsearch
 set nowrapscan
+nnoremap <F3> :noh<CR>
 
 " mouse
 set mouse=a
