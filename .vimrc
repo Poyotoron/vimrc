@@ -43,7 +43,7 @@ set nowrapscan
 nnoremap <F3> :noh<CR>
 
 " mouse
-set mouse=a
+"set mouse=a
 
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
 	exec "imap " . k . " " . k . "<C-N><C-P>"
