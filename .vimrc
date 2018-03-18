@@ -48,3 +48,21 @@ nnoremap <F3> :noh<CR>
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
 	exec "imap " . k . " " . k . "<C-N><C-P>"
 endfor
+
+" neobundle
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" add plugins
+filetype plugin on
+NeoBundleCheck
+
+" Install
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippet'
+
+call neobundle#end()
