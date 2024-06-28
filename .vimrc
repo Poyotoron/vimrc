@@ -1,3 +1,20 @@
+" NeoBundle
+set nocompatible
+filetype plugin indent off
+
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim
+    call neobundle#begin(expand('~/.vim/bundle'))
+endif
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundle 'dracula/vim'
+
+filetype plugin indent on
+
+call neobundle#end()
+
 " setting
 set fenc=utf-8
 set nobackup
@@ -5,12 +22,11 @@ set noswapfile
 set autoread
 set hidden
 set backspace=indent,eol,start
-set nocompatible
 set showcmd
 set clipboard=unnamed
 
 " view
-colorscheme molokai
+colorscheme dracula
 set t_Co=256
 set number
 set cursorline
@@ -25,11 +41,6 @@ set title
 set ruler
 set nowrap
 
-" input
-imap [ []<left>
-imap ( ()<left>
-imap { {}<left>
-
 " Tab
 set tabstop=4
 set shiftwidth=4
@@ -39,7 +50,6 @@ set hlsearch
 set ignorecase
 set smartcase
 set incsearch
-set nowrapscan
 nnoremap <F3> :noh<CR>
 
 " mouse
